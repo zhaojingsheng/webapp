@@ -9,7 +9,7 @@ routes=web.RouteTableDef()
 
 @routes.get("/")
 async  def index(request):
-    return web.Response(body=b'<h1>test</h1>')
+    return web.Response(body=b'<h1>test</h1>',content_type="text/html")
 
 def init():
     app=web.Application()
